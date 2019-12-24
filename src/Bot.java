@@ -56,11 +56,11 @@ public class Bot extends TelegramLongPollingBot {
         }
         return msg;
     }
-
+/*
     public String getInfoBook(){
         SendPhoto sendPhotoRequest = new SendPhoto();
 
-        try(InputStream in = new URL(book.getImg()).openStrean()){
+        try(InputStream in = new URL(book.getImg()).openStream()){
             Files.copy(in, Paths.get("D:\\Git\\botAnother\\"));  //Путь загруженного изображения
             sendPhotoRequest.setChatId(chat_id);
             sendPhotoRequest.setPhoto(new File("D:\\Git\\botAnother\\"));
@@ -81,4 +81,10 @@ public class Bot extends TelegramLongPollingBot {
             +"\n\nОписание: " + book.getDescription();
         return info;
     }
+
+
+
+
+}
+*/
 }
